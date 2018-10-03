@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="col-md-6">
+    <h2 class="text-center"> User Register</h2>
+  <form>
+     
+    
+    
+    <div class="form-group">
+      <label for="firstname"></label>
+      <input type="text" [(ngModel)]="user.firstname" placeholder="First Name" name="firstname" class="form-control" id="firstname">
+    </div>
+
+    <div class="form-group">
+      <label for="lastname"></label>
+      <input type="text" [(ngModel)]="user.lastname" placeholder="Last Name" name="lastname" class="form-control" id="lastname">
+    </div>
+
+    <div class="form-group">
+      <label for="dob"></label>
+      <input type="date" [(ngModel)]="user.dob" placeholder="dd/mm/yyyy" name="dob" class="form-control" id="dob">
+    </div>
+
+    <div class="form-group">
+      <label for="gender"></label>
+      <input type="text" [(ngModel)]="user.gender" placeholder="gender" name="gender" class="form-control" id="gender">
+    </div>
+  
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="email" [(ngModel)]="user.email" placeholder="User Email" name="email" class="form-control" id="email">
+    </div>
+  
+    <div class="form-group">
+      <label for="phonenumber"></label>
+     <input type="text" [(ngModel)]="user.phonenumber" placeholder="User Contact" name="phonenumber" class="form-control" id="phonenumber">
+    </div>
+
+    <div class="form-group">
+      <label for="username"></label>
+      <input type="text" [(ngModel)]="user.username" placeholder="User Name" name="username" class="form-control" id="username">
+    </div>
+    
+    <div class="form-group">
+      <label for="password"></label>
+     <input type="password" [(ngModel)]="user.password" placeholder="User password" name="password" class="form-control" id="password">
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPass"></label>
+     <input type="password" [(ngModel)]="user.confirmPass" placeholder="Confirm password" name="confirmPass" class="form-control" id="confirmPass">
+    </div>
+     
+    
+    <button class="btn btn-success" (click)="createUser()">Submit</button>
+    
+  
+  </form>
+  </div>
+  
+    
+
+</div>

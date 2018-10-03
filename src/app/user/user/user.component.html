@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-md-6">
+    <h2 class="text-center"> User login</h2>
+<div>
+  <form>
+      <div class="form-group">
+          <label for="email">User Name:</label>
+          <input type="email" [(ngModel)]="user.userName" placeholder="User Name" name="userName" class="form-control" id="userName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">User password:</label>
+           <input [(ngModel)]="user.userPass" placeholder="User password" name="userPass" class="form-control" id="userPass">
+          </div>
+          <button class="btn btn-success" (click)="logIn()">Login</button>
+  </form>
+</div>
